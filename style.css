@@ -127,6 +127,12 @@ html{
     width: 21.3rem;
 }
 
+.skill-icon-group{
+    margin: 1rem 0rem;
+    width: auto;
+    
+}
+
 
 @media (orientation: portrait) {
      .bracu>h2, h3, h4{
