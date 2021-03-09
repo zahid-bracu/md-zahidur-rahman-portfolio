@@ -8,6 +8,7 @@ ReactStrap -OK
 MU - OK
 React-Router - OK
 Firebase - OK
+
 Node - OK
 Express - OK
 MongoDB - OK
@@ -21,6 +22,7 @@ Sass -
 GraphQL -OK
 Redux -OK
 MySQL -OK
+Oracle -OK
 Python -OK
 Django -OK
 React-Native -OK
