@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon.css">
     <title>Zahid's Portfolio</title>
 </head>
 <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top
+    ">
         <div class="container">
           <a class="navbar-brand" href="#">
               <img src="./resources/images/logo.png" class="main-logo"/>
@@ -23,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
               
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -45,7 +47,9 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#footer">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#footer">
+                    <button class="btn btn-dark btn-lg">Contact</button>
+                </a>
             </li>
                
                
@@ -58,9 +62,9 @@
 
 
         <!-- Banner One -->
-        <div class="container banner-one">
+        <div class="container banner-one mt-4">
             <div class="row justify-content-center align-items-center">
-                <div class="banner-one-left col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="banner-one-left col-lg-7 col-md-12 col-sm-12 col-12">
                     <h1 class="banner-one-left-h1">
                         Hello World, 
                     </h1>
@@ -69,33 +73,39 @@
                         Aspiring Software Developer
                     </h2>
                     <h4 class="banner-one-left-h4">
-                        A passionate Software Developer 🚀 I want to explore every stack in JavaScript, Python & Java..
+                        A passionate Software Developer 🚀 I want to explore every stack in JavaScript & Python..
                         
                     </h4>
 
 
                     <div class="contact-icon-group">
+                        <!-- github -->
 
                         <a href="https://github.com/zahid-bracu" target="_blank">
-                            <img src="./resources/images/contact-icon/github.png"; style="width: 4rem;" class="contact-icon"/>
-                        </a>
+                        <svg class="contact-icon" role="img" id="github" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub icon</title>
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg> </a>
 
+                        <!-- linkedin -->
                         <a href="https://www.linkedin.com/in/md-zahidur-rahman-54b3ba17b/" target="_blank">
-                            <img src="./resources/images/contact-icon/linkedin.png"; style="width: 4rem;" class="contact-icon"/>
-                        </a>
+                        <svg class="contact-icon" id="linkedin" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
 
+
+                        <!-- google -->
                         <a href = "mailto: zahid.mym@gmail.com" target="_blank">
-                            <img src="./resources/images/contact-icon/google.png"; style="width: 4rem;" class="contact-icon"/>
-                        </a>
-                        
-                        <a href = "https://www.instagram.com/zaheed_rahman/" target="_blank">
-                            <img src="./resources/images/contact-icon/ig.png"; style="width: 4rem;" class="contact-icon"/>
-                        </a>
+                        <svg class="contact-icon" id="google" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.917 16.083c-2.258 0-4.083-1.825-4.083-4.083s1.825-4.083 4.083-4.083c1.103 0 2.024.402 2.735 1.067l-1.107 1.068c-.304-.292-.834-.63-1.628-.63-1.394 0-2.531 1.155-2.531 2.579 0 1.424 1.138 2.579 2.531 2.579 1.616 0 2.224-1.162 2.316-1.762h-2.316v-1.4h3.855c.036.204.064.408.064.677.001 2.332-1.563 3.988-3.919 3.988zm9.917-3.5h-1.75v1.75h-1.167v-1.75h-1.75v-1.166h1.75v-1.75h1.167v1.75h1.75v1.166z"/></svg></a>
 
 
+
+                        <!-- facebook -->
                         <a href = "https://www.facebook.com/zahidur/" target="_blank">
-                            <img src="./resources/images/contact-icon/facebook.png"; style="width: 4rem;" class="contact-icon"/>
-                        </a>
+                        <svg class="contact-icon" id="facebook" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
+
+
+                        <!-- ig -->
+                        <a href = "https://www.instagram.com/zaheed_rahman/" target="_blank">
+                        <svg  xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 24 24"><path d="M17.25 7.288v1.269c0 .297-.241.539-.538.539h-1.269c-.299 0-.538-.242-.538-.539v-1.269c0-.297.239-.538.538-.538h1.269c.297 0 .538.241.538.538zm-5.25 7.403c1.486 0 2.693-1.205 2.693-2.692s-1.207-2.69-2.693-2.69c-1.487 0-2.691 1.204-2.691 2.691s1.204 2.691 2.691 2.691zm4.261-3.291c.028.196.046.396.046.599 0 2.38-1.928 4.308-4.307 4.308s-4.307-1.928-4.307-4.307c0-.204.018-.403.046-.599.027-.194.066-.383.118-.567h-1.107v5.879c0 .297.241.538.538.538h9.424c.297 0 .538-.241.538-.538v-5.879h-1.107c.05.184.09.373.118.566zm7.739.6c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-5.385c0-.892-.723-1.615-1.615-1.615h-10.77c-.892 0-1.615.723-1.615 1.615v10.769c0 .893.723 1.616 1.615 1.616h10.77c.892 0 1.615-.723 1.615-1.616v-10.769z"/></svg></a>
                         
                     </div>
 
@@ -113,7 +123,7 @@
                     
                 </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-last order-md-first order-sm-first order-first">
                     <img class="banner-img-one" src="./resources/images/banner-image.png" />
                 </div>
 
@@ -943,7 +953,8 @@
     </div>
 
     <!-- footer -->
-    <footer id="footer" class="container footer">
+    <footer id="footer" class="container footer text-center">
+        
         <h1>Reach out to me! <span class="bd-danger">☎️</span></h1>
         <h3>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</h3>
         <h2> 🏠 Bangladeshi Web Developer | 👾 Aspiring Software Developer  | 🔥 Open Source Contributor  | ✍️ Tech Writer </h2>
@@ -952,37 +963,71 @@
         <h4>Phone: +8801612318884</h4>
         <h4>Dhaka, Bangladesh</h4>
         <h4>Open for opportunities: Yes</h4>
+    </footer>
+
+
+        <div class="container-form mt-4">
+            <h2 class="text-center my-2">✉ Leave me a messge</h2>
+            <form>
+                <!-- name -->
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+
+                  <!-- email -->
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+
+                <!-- message -->
+                <div class="form-group">                     
+                    <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                  </div>
+               
+                <button type="submit" class="btn-form btn btn-dark ">Submit</button>
+              </form>
+        </div>
+       
 
 
 
-        <div class="mt-4">
-             
+        <div class="my-4">
+            <div class="contact-icon-group-fotter">
+                <!-- github -->
 
                 <a href="https://github.com/zahid-bracu" target="_blank">
-                    <img src="./resources/images/contact-icon/github.png"; style="width: 4rem;" class="contact-icon"/>
-                </a>
+                <svg class="contact-icon" role="img" id="github" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub icon</title>
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg> </a>
 
+                <!-- linkedin -->
                 <a href="https://www.linkedin.com/in/md-zahidur-rahman-54b3ba17b/" target="_blank">
-                    <img src="./resources/images/contact-icon/linkedin.png"; style="width: 4rem;" class="contact-icon"/>
-                </a>
-
-                <a href = "mailto: zahid.mym@gmail.com" target="_blank">
-                    <img src="./resources/images/contact-icon/google.png"; style="width: 4rem;" class="contact-icon"/>
-                </a>
-                
-                <a href = "https://www.instagram.com/zaheed_rahman/" target="_blank">
-                    <img src="./resources/images/contact-icon/ig.png"; style="width: 4rem;" class="contact-icon"/>
-                </a>
+                <svg class="contact-icon" id="linkedin" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
 
 
+                <!-- google -->
+                <a href = "mailto: zahid.mym@gmail.com" target="_blank" title="zahid.mym@gmail.com">
+                <svg class="contact-icon" id="google" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.917 16.083c-2.258 0-4.083-1.825-4.083-4.083s1.825-4.083 4.083-4.083c1.103 0 2.024.402 2.735 1.067l-1.107 1.068c-.304-.292-.834-.63-1.628-.63-1.394 0-2.531 1.155-2.531 2.579 0 1.424 1.138 2.579 2.531 2.579 1.616 0 2.224-1.162 2.316-1.762h-2.316v-1.4h3.855c.036.204.064.408.064.677.001 2.332-1.563 3.988-3.919 3.988zm9.917-3.5h-1.75v1.75h-1.167v-1.75h-1.75v-1.166h1.75v-1.75h1.167v1.75h1.75v1.166z"/></svg></a>
+
+
+
+                <!-- facebook -->
                 <a href = "https://www.facebook.com/zahidur/" target="_blank">
-                    <img src="./resources/images/contact-icon/facebook.png"; style="width: 4rem;" class="contact-icon"/>
-                </a>
+                <svg class="contact-icon" id="facebook" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
+
+
+                <!-- ig -->
+                <a href = "https://www.instagram.com/zaheed_rahman/" target="_blank">
+                <svg  xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 24 24"><path d="M17.25 7.288v1.269c0 .297-.241.539-.538.539h-1.269c-.299 0-.538-.242-.538-.539v-1.269c0-.297.239-.538.538-.538h1.269c.297 0 .538.241.538.538zm-5.25 7.403c1.486 0 2.693-1.205 2.693-2.692s-1.207-2.69-2.693-2.69c-1.487 0-2.691 1.204-2.691 2.691s1.204 2.691 2.691 2.691zm4.261-3.291c.028.196.046.396.046.599 0 2.38-1.928 4.308-4.307 4.308s-4.307-1.928-4.307-4.307c0-.204.018-.403.046-.599.027-.194.066-.383.118-.567h-1.107v5.879c0 .297.241.538.538.538h9.424c.297 0 .538-.241.538-.538v-5.879h-1.107c.05.184.09.373.118.566zm7.739.6c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-5.385c0-.892-.723-1.615-1.615-1.615h-10.77c-.892 0-1.615.723-1.615 1.615v10.769c0 .893.723 1.616 1.615 1.616h10.77c.892 0 1.615-.723 1.615-1.616v-10.769z"/></svg></a>
+                
+            </div>
                 
              
      </div>
      <h1></h1>
- </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
