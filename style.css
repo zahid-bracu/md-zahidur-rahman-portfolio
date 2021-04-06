@@ -63,6 +63,11 @@ html{
     font-size: 1.8rem;
 }
 
+
+.btn-cv{
+    font-size: 1.5rem;
+}
+
  
 .banner-btn-group{
     margin:2.4em 0px;
@@ -258,4 +263,10 @@ form{
     margin: auto;
     width:99%;
     max-width: 500px;
+}
+
+
+.own-img:hover{
+    box-shadow: 2px 2px 5px rgb(54, 54, 54);
+    cursor: pointer;
 }
