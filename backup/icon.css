@@ -1,0 +1,41 @@
+
+
+
+#github{
+    fill: #333333;
+    width: 45px;
+    transition: .2s;
+}
+
+#linkedin{
+    fill: #1276a5;
+    width: 45px;
+    transition: .2s;
+}
+
+
+#google{
+    fill: #f05142;
+    width: 45px;
+    transition: .2s;
+}
+
+
+#facebook{
+    fill: #5674b4;
+    width: 45px;
+    transition: .2s;
+}
+
+
+#instagram{
+    fill: #f3bb43;
+    width: 45px;
+    transition: .2s;
+}
+
+
+#instagram:hover{
+    fill:rgb(26, 25, 25) !important;
+    cursor: pointer;
+}
