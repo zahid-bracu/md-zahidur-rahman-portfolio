@@ -2,8 +2,9 @@
   "name": "md-zahidur-rahman-portfolio",
   "version": "1.0.0",
   "description": "This is my Complete website for portfolio. I will keep every project source code link &amp; live view in this repository. Now this repository is under construction. But If any one wishes to see some screen please check read.me section of this repository.Thank you",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/zahid-bracu/md-zahidur-rahman-portfolio/issues"
   },
-  "homepage": "https://github.com/zahid-bracu/md-zahidur-rahman-portfolio#readme"
+  "homepage": "https://github.com/zahid-bracu/md-zahidur-rahman-portfolio#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

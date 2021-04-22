@@ -1,0 +1,277 @@
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear !important;
+  }
+
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.main-logo{
+    width: 20rem;
+}
+
+.nav-link{
+    font-size: 1.8rem;
+    margin: 0px 10px;
+    color: rgb(51, 51, 51) !important;
+}
+
+.nav-link:hover{
+    color:black !important;
+}
+
+.banner-img-one{
+    width:90%;
+    max-width: 400px;
+}
+
+
+.banner-one-left-h1, .education-banner-h1, .react-banner-h1{
+    font-size: 3.8rem;
+    
+}
+
+.banner-one-left-h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 12px 0px;
+}
+
+.banner-one-left-h4{
+    font-size: 2rem;
+    color: rgb(100, 100, 100);
+    line-height: 1.7;
+}
+
+
+.btn-contact{
+    font-size: 1.8rem;
+    margin-right: .6em;
+}
+
+.btn-resume{
+    font-size: 1.8rem;
+}
+
+
+.btn-home{
+    font-size: 1.5rem;
+}
+
+
+.btn-cv{
+    font-size: 1.5rem;
+}
+
+ 
+.banner-btn-group{
+    margin:2.4em 0px;
+}
+
+.banner-btn-group> .btn{
+    margin: 5px 0px;
+}
+.banner-one-left-h4{
+    text-align: left;
+}
+
+.thesis{
+    color:rgb(49, 49, 49);
+    text-decoration: inherit !important;
+}
+
+.thesis:hover{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+
+.custom-card{
+    width:90%;
+    max-width: 35em;
+    min-height: 15em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 11px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* grid-gap:2em; */
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(165, 165, 165);
+    margin: 10px 7px;
+}
+
+.custom-card:hover{
+    box-shadow: 5px 5px 6px rgb(165, 165, 165);
+    /* transform: scale(1.01); */
+    cursor: pointer;
+}
+
+
+.custom-card>div>h3{
+    font-weight: 600;
+    text-align: left !important;
+}
+
+.custom-card>div>a{
+    text-decoration: inherit;
+    color: black;
+    text-align: left !important;
+}
+.custom-card>div>a>h4{
+    text-align: left !important;
+}
+
+
+.custom-card>div>a>h4:hover{
+    font-weight: 600 !important;
+    color: rgb(66, 66, 66);
+}
+
+
+.skill-icon-group{
+    margin: 1rem 0rem;
+    width: auto;
+    
+}
+
+
+.contact-icon-group{
+   
+    width: 25.7rem;
+}
+
+.contact-icon{
+    margin-right: .5em;
+    transition: .4s;      
+}
+
+
+.contact-icon:hover{
+    fill:rgb(26, 25, 25) !important;
+    cursor: pointer;
+}
+
+
+@media (orientation: portrait) {
+     .bracu>h2, h3, h4{
+         text-align: center;
+     }
+     .bracu>img{
+         margin: auto;
+     }
+     .education-banner-h1{
+         text-align: center;
+     }
+     .banner-one > h1, h2, h4, .banner-one-left-h1{
+         text-align: center !important;
+     }
+    
+     .contact-icon-group{
+      
+         margin: .8em auto;
+     }
+
+     .btn-contact, .btn-resume{
+         display: block !important;
+         margin: .5em auto !important;
+     }
+
+     .footer>h1{
+         text-align: center;
+     }
+  }
+
+  .tools{
+    margin: .5em 0em;     
+  }
+
+  .badge{
+      font-size: 1.1em;
+      margin: .18em;
+  }
+
+
+  
+
+
+  
+
+
+  .footer{
+      margin-top: 5em;
+  }
+  .footer>h1{
+      margin: .8em 0em .4em 0em;
+      font-size: 3.78rem;
+  }
+
+
+  .footer>h3{
+        margin: .3em 0em;
+        font-size: 2rem;
+  }
+
+.footer>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .5em 0em .8em 0em;
+}
+
+
+.footer>h4{
+    font-size: 1.8rem;
+    color: rgb(70, 70, 70);
+}
+
+.footer>h4:hover{
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.contact-icon-group-fotter{
+    width: 25.7rem;
+ 
+    display: block;
+    margin: auto;
+}
+
+form{
+    font-size: 1.5rem;
+}
+
+.form-control{
+    font-size: 1.5rem;
+}
+
+.btn-form{
+    font-size: 1.5rem;
+}
+
+
+.container-form{
+    display: block;
+    margin: auto;
+    width:99%;
+    max-width: 500px;
+}
+
+
+.own-img:hover{
+    box-shadow: 2px 2px 5px rgb(54, 54, 54);
+    cursor: pointer;
+}
