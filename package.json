@@ -4,7 +4,7 @@
   "description": "This is my Complete website for portfolio. I will keep every project source code link &amp; live view in this repository. Now this repository is under construction. But If any one wishes to see some screen please check read.me section of this repository.Thank you",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
