@@ -68,7 +68,7 @@
         <!-- Banner One -->
         <div class="container banner-one mt-4">
             <div class="row justify-content-center align-items-center">
-                <div  class="banner-one-left col-lg-7 col-md-12 col-sm-12 col-12">
+                <div data-aos="fade-right"  class="banner-one-left col-lg-7 col-md-12 col-sm-12 col-12">
                     <h1 class="banner-one-left-h1">
                         Hello World, 
                     </h1>
@@ -127,7 +127,7 @@
                     
                 </div>
 
-                <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-last order-md-first order-sm-first order-first">
+                <div data-aos="fade-left" class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-last order-md-first order-sm-first order-first">
                     <img class="banner-img-one" src="./resources/images/banner-image.png" />
                 </div>
 
@@ -136,19 +136,20 @@
             </div>
         </div>
 
+        <div class="my-5"></div>
 
         
 
         <!-- Banner two -->
-        <div id="skill" class="container banner-one" style="margin-top: 60px;">
-            <div class="row justify-content-center align-items-center">
+        <div  id="skill" class="container banner-one" style="margin-top: 60px;">
+            <div  class="row justify-content-center align-items-center">
 
-                <div  class="col-lg-6 col-md-12 col-sm-12 col-12 fade-right">
+                <div data-aos="fade-right"  class="col-lg-6 col-md-12 col-sm-12 col-12 fade-right">
                     <img class="banner-img-one" src="./resources/images/banner-image-two.png" />
                 </div>
 
 
-                <div  class="banner-one-left col-lg-6 col-md-12 col-sm-12 col-12 fade-left">
+                <div data-aos="fade-left"  class="banner-one-left col-lg-6 col-md-12 col-sm-12 col-12 fade-left">
                 
                     <p class="banner-one-left-h4 text-justify">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
@@ -169,35 +170,59 @@
             </div>
         </div>
 
+        <div class="my-5"></div>
+
+
         <!-- Education -->
-        <div id="education" class="container education mt-5">
-            <h1 class=" education-banner-h1">Education</h1>
+        <div  class="container">
+            <h2 class="text-center my-5" id="education" style="font-size: 3.3rem;">Education</h2>
+        </div>
+        <div data-aos="zoom-in"  class="container education my-5">
+            <!-- <h1 id="education" class="text-center education-banner-h1">Education</h1> -->
 
             <div class="row bracu mt-5">
                 
-                <img   style="width: 50%;max-width: 100px;" src="./resources/images/bracu_logo.png"/>
-                <h2   style="font-weight:600;margin: 10px 0px 6px 0px;">BRAC University</h2>
-                <h3   style="font-weight:600 ;">Bachelor of Science in Computer Science</h3>
+                <img class='mx-auto'   style="width: 50%;max-width: 100px;" src="./resources/images/bracu_logo.png"/>
+                <h2 class="text-center"  style="font-weight:600;margin: 10px 0px 6px 0px;">BRAC University</h2>
+                <h3 class="text-center"  style="font-weight:600 ;">Bachelor of Science in Computer Science</h3>
                
-                <h4>Thesis: <a class="thesis" href="http://dspace.bracu.ac.bd/xmlui/handle/10361/14054" target="_blank">
+                <h4 class="text-center">Thesis: <a class="thesis" href="http://dspace.bracu.ac.bd/xmlui/handle/10361/14054" target="_blank">
                     Human Activity Recognition using wearable body sensor by machine learning approach
                 </a></h4>
             </div>
+
+
+            <div class="row bracu mt-5">
+                
+                <img  class="mx-auto" style="width: 50%;max-width: 100px;" src="./resources/images/cpscm.jpg"/>
+                <h2  class="text-center" style="font-weight:600;margin: 10px 0px 6px 0px;">Cantonmet Public School & College, Mymensingh</h2>
+                <h3  class="text-center" style="font-weight:600 ;">SSC & HSC (Science Group) </h3>
+               
+               
+                <h4 class="text-center">Activity: Acted as Class Representative for 2 years, got Secondary Board Examination Scholarship
+                </h4>
+            </div>
         </div>
+
+        <div class="my-5"></div>
 
 
         <!-- github Contribution -->
 
-        <div class="container">
-            <h2 class="text-center my-5" id="projects" style="font-size: 3.3rem;">My Github Contribution</h2>
-        </div>
+        <section data-aos="zoom-in" class="my-5">
+            <div  class="container">
+                <h2 class="text-center my-5" id="projects" style="font-size: 3.3rem;">My Github Contribution</h2>
+            </div>
+    
+    
+            <div class="container">
+                <img class="d-block mx-auto" style="width: 90%;" src="http://ghchart.rshah.org/zahid-bracu" alt="Name Your GitHub chart">
+            </div>
 
+        </section>
+        
 
-        <div class="container">
-            <img class="d-block mx-auto" style="width: 90%;" src="http://ghchart.rshah.org/zahid-bracu" alt="Name Your GitHub chart">
-        </div>
-
-
+        <div class="my-5"></div>
 
         <!-- portfolio -->
 
@@ -947,12 +972,34 @@
      <h1></h1>
 
 
-    <script>
-        AOS.init();
-    </script>
+    
     
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 3, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
