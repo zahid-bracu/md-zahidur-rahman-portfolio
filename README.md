@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9f81b91-a91a-4897-b121-b6e64dc32d59/deploy-status)](https://app.netlify.com/sites/zahidur/deploys)
+
 # md-zahidur-rahman-portfolio
 This is my Complete website for portfolio. I will keep every project source code link &amp; live view in this repository. Now this repository is under construction. But If any one wishes to see some screen please check read.me section of this repository.Thank you
 
